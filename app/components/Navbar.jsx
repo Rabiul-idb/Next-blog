@@ -10,9 +10,9 @@ const Navbar = () => {
                     <h2 className='font-bold text-3xl'>Logo</h2>
                 </div>
                 <ul className='flex gap-5'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="http://">About</a></li>
-                    <li><a href="http://">Blogs</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="http://">About</Link></li>
+                    <li><Link href="http://">Blogs</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
                 <div>

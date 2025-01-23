@@ -11,7 +11,7 @@ const page = () => {
          </span>
          <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mt-3">
             
-           <div className="">
+           <div>
              <Player autoplay loop src={animationData} className="w-[300px]" />
      
              <h2 className="font-semibold text-2xl mb-7">Contact Us</h2>
