@@ -1,4 +1,6 @@
-import React from 'react';
+
+import Link from 'next/link';
+
 
 const Navbar = () => {
     return (
@@ -11,7 +13,7 @@ const Navbar = () => {
                     <li><a href="#">Home</a></li>
                     <li><a href="http://">About</a></li>
                     <li><a href="http://">Blogs</a></li>
-                    <li><a href="http://">Contact</a></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
                 <div>
                     <button className='btn'>Login / Register</button>
