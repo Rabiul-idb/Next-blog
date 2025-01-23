@@ -15,9 +15,9 @@ const Navbar = () => {
                     <li><Link href="http://">Blogs</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
-                <div>
+                
                     <button className='btn'>Login / Register</button>
-                </div>
+                
             </div>
         </div>
     );

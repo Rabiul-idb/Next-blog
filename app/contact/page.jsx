@@ -1,6 +1,6 @@
-"use client"
-import { Player } from "@lottiefiles/react-lottie-player";
-import animationData from "../../public/lottie-contact.json";
+
+// import { Player } from "@lottiefiles/react-lottie-player";
+// import animationData from "../../public/lottie-contact.json";
 
 
 const page = () => {
@@ -12,7 +12,7 @@ const page = () => {
          <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mt-3">
             
            <div>
-             <Player autoplay loop src={animationData} className="w-[300px]" />
+             {/* <Player autoplay loop src={animationData} className="w-[300px]" /> */}
      
              <h2 className="font-semibold text-2xl mb-7">Contact Us</h2>
              <p>
@@ -63,6 +63,7 @@ const page = () => {
            </div>
          </div>
         </div>
+        // <h1>this si a contact page</h1>
        );
 };
 
