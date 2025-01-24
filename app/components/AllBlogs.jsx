@@ -13,8 +13,8 @@ const AllBlogs = async () => {
         allblogs.map((blog, index) => (
           <div key={index} className="card bg-base-100 shadow-lg hover:shadow-2xl duration-300">
             <div className="card-body">
-              <h2 className="card-title text-lg">{blog.title}</h2>
-              <p>{blog.body}</p>
+              <h2 className="card-title text-lg text-black">{blog.title}</h2>
+              <p className="text-black">{blog.body}</p>
               <div className="card-actions justify-end">
                 <Link href={`/blog/${blog.id}`} className="btn">Details</Link>
               </div>
