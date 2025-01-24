@@ -26,7 +26,7 @@ const Navbar = () => {
         {isAuthenticated ? (
           <div className='flex items-center'>
             <p className="font-medium">{user?.given_name || ''}</p>
-            <Image src={user?.picture || ''} width={40} height={40} className=' rounded-full ml-2'></Image>
+            <Image src={user?.picture || ''} width={40} height={40} alt='user' className=' rounded-full ml-2'></Image>
           </div>
         ) : (
           <LoginLink>
