@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const { user, isAuthenticated } = useKindeAuth();
-  console.log(user)
+  //console.log(user)
 
   return (
     <div className='bg-indigo-200 shadow-lg py-3'>
@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
         {isAuthenticated ? (
           <div className='flex items-center'>
-            <p className="font-medium">{user?.given_name || ''}</p>
+            <p className="font-medium hidden sm:block">{user?.given_name || ''}</p>
             <Image src={user?.picture || ''} width={40} height={40} alt='user' className=' rounded-full ml-2'></Image>
           </div>
         ) : (
