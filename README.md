@@ -23,11 +23,11 @@ Check out the live project here: [Next_Blog](https://next-blog-woad-phi.vercel.a
 ## Setup and Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/next_blog.git
+   git clone https://github.com/Rabiul-idb/Next-blog.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd next_blog
+   cd next-blog
    ```
 3. Install dependencies:
    ```bash
