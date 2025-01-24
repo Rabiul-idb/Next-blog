@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next_Blog
 
-## Getting Started
+## Description
+Next_Blog is my first project built using Next.js 15. It is a simple blog site that fetches fake blog data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/). The application incorporates user authentication using Kinde and is styled with the Tailwind CSS framework.
 
-First, run the development server:
+The profile page is a protected route, meaning that only authenticated and logged-in users can access it.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Blog listing with data fetched from JSONPlaceholder.
+- User authentication implemented using Kinde.
+- Protected routes for logged-in users (e.g., Profile page).
+- Styled using Tailwind CSS for a clean and responsive UI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
+Check out the live project here: [Next_Blog](https://next-blog-woad-phi.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
+- **Next.js 15**: For building the frontend and handling server-side rendering.
+- **JSONPlaceholder**: As the source of fake blog data.
+- **Kinde**: For user authentication.
+- **Tailwind CSS**: For responsive and utility-first styling.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup and Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/next_blog.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd next_blog
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the root of the project and add your Kinde credentials:
+   ```env
+   NEXT_PUBLIC_KINDE_ISSUER_URL=https://your-kinde-issuer.kinde.com
+   NEXT_PUBLIC_KINDE_CLIENT_ID=your_client_id
+   KINDE_CLIENT_SECRET=your_client_secret
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
 
-## Learn More
+## Usage
+- **Home Page**: Displays a list of blogs fetched from JSONPlaceholder.
+- **Profile Page**: Accessible only to authenticated users. Requires logging in.
 
-To learn more about Next.js, take a look at the following resources:
+## Authentication
+- Users can log in or register using the "Login / Register" button provided in the navigation bar.
+- Upon successful login, authenticated users can view their profile information on the Profile page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
+This project is deployed on Vercel. The following steps were used for deployment:
+1. Pushed the project to a GitHub repository.
+2. Linked the repository to Vercel.
+3. Configured the environment variables in the Vercel dashboard.
+4. Vercel handles the build and deployment automatically.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Enhancements
+- Add a comment section for blogs.
+- Implement CRUD functionality for blogs.
+- Add user roles and permissions.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thank you for checking out Next_Blog! If you have any feedback or suggestions, feel free to reach out.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
