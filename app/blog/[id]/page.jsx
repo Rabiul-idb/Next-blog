@@ -2,7 +2,7 @@
 
 const BlogDetails = async({params})=>{
    
-     const id  = await params.id;
+     const {id}  = await params;
     
 
     const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);

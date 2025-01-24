@@ -11,7 +11,7 @@ const AllBlogs = async () => {
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {
         allblogs.map((blog, index) => (
-          <div className="card bg-base-100 shadow-lg hover:shadow-2xl duration-300">
+          <div key={index} className="card bg-base-100 shadow-lg hover:shadow-2xl duration-300">
             <div className="card-body">
               <h2 className="card-title">{blog.title}</h2>
               <p>{blog.body}</p>
